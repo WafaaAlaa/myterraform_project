@@ -1,8 +1,8 @@
 module "network" {
   source = "../modules/network"
-  cidrcidr_block_vpc = var.vpc
+  cidr_block_vpc = var.vpc
   cidr_block_private  =  var.private
-  cidr_block_route_table = var._route_table
+  cidr_block_route_table = var.route_table
   cidr_block_public = var.public
 }
 module "ec2" {
